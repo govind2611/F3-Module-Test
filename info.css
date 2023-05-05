@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+body {
+  background-color: RGB(199 210 210);
+}
+.container h1 {
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.info-container {
+  width: auto;
+  display: flex;
+  margin-left: 40px;
+}
+.container-2,
+.container-3,
+.container-4 {
+  width: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#ip-address{
+  font-size: 26px;
+  font-weight: 300;
+ color: #9b3311;
+}
+.container-3,
+.container-4 {
+  margin-left: 140px;
+}
+.container-5 {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.container-5 div {
+  padding-bottom: 20px;
+}
+#map {
+  border: none;
+  margin-left: 60px;
+  padding-bottom: 20px;
+  width: 90vw;
+  height: 500px;
+}
+
+.span {
+  font-size: 24px;
+  font-weight: 200;
+}
+input {
+  width: 96%;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: none;
+  margin: 0 30px;
+}
+.post-container {
+  display: grid;
+  margin: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  
+}
+.post-content {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+}
+.post-content div {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.container-2,
+.container-3,
+.container-4 div {
+  margin-bottom: 20px;
+}
+
+.container-5 span {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 970px) {
+  .container h1 {
+    font-size: 4vw;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .container-2,
+  .container-3,
+  .container-4 {
+    font-size: 3vw;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  .info-container {
+    flex-flow: wrap;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+ 
+  #map {
+    margin-left: 10px;
+    width: 95vw;
+  }
+  .span {
+    font-size: 4vw;
+    
+  }
+  .container-5 div{
+    margin-left:-20px;
+    font-size: 3vw;
+  }
+  .container-5 span {
+    font-size: 4vw;
+  }
+  input {
+    width: 95vw;
+    height: 50px;
+    margin: 0 20px;
+  }
+  .post-container {
+   
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  input {
+    width: 90vw;
+    height: 50px;
+    margin: 0 20px;
+  }
+  .post-container {
+   
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}

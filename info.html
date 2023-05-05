@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F3-contest-III</title>
+    <link rel="stylesheet" href="./info.css" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        My Public IP Address :
+        <span id="ip-address"></span>
+      </h1>
+    </div>
+
+    <div class="info-container">
+      <div class="container-2">
+        <div class="lat-container">
+          <h2>Lat: <span id="lat-span" class="span"></span></h2>
+        </div>
+        <div class="long-container">
+          <h2>Long: <span id="long-span" class="span"></span></h2>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="city-container">
+          <h2>City: <span id="city-span" class="span"></span></h2>
+        </div>
+        <div class="region-container">
+          <h2>Region: <span id="region-span" class="span"></span></h2>
+        </div>
+      </div>
+      <div class="container-4">
+        <div class="organisation-container">
+          <h2>Organization: <span id="organization-span" class=span></span></h2>
+        </div>
+        <div class="hostname-container">
+          <h2>Hostname: <span id="hostname-span" class="span"></span></h2>
+        </div>
+      </div>
+      
+    </div>
+  
+
+    <div class="map-container">
+      <iframe id="map"></iframe>
+    </div>
+
+    <div class="container-5">
+      <div class="timezone-container">
+        <h2>Time Zone: <span id="timezone-span"></span></h2>
+      </div>
+
+      <div class="date-container">
+        <h2>Date And Time: <span id="date-span"></span></h2>
+      </div>
+      <div class="pincode-container">
+        <h2>Pincode: <span id="pincode-span"></span></h2>
+      </div>
+      <div class="message-container">
+        <h2><span id="message-span"></span></h2>
+      </div>
+    </div>
+
+    <input id="search" type="search" placeholder="Filter">
+
+    <div class="post-container">
+      
+    </div>
+    <script src="./info.js"></script>
+  </body>
+</html>
